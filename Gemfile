@@ -8,6 +8,7 @@ gem 'rails', '3.2.3'
 gem 'haml-rails'
 gem 'pg'
 gem 'jquery-rails'
+gem 'twitter'
 
 
 # Gems used only for assets and not required

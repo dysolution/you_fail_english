@@ -1,3 +1,10 @@
-%h1 Examples#index
+%h1== Results for "#{@query}"
 
-%div.tweet Sure, it's yours. Your welcome.
+= form_tag(examples_path, :method => 'post') do
+  = text_field_tag('q')
+  = submit_tag 'search'
+
+- @tweets.each do |tweet|
+  %div.tweet
+    = tweet.text
+    == (<strong>#{tweet.from_user}</strong>)
