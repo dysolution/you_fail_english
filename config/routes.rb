@@ -1,4 +1,6 @@
 YouFailEnglish::Application.routes.draw do
+  match 'examples' => 'examples#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
