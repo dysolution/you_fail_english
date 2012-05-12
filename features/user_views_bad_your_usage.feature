@@ -4,5 +4,6 @@ Feature: User views bad "your" usage
   I want to see that tweets that says "your welcome" show up
 
   Scenario: User sees Your welcome examples
-    When I am on the examples page
+    Given I am on the examples page
+    When I search for "Your welcome"
     Then I should see a tweet with "Your welcome"
