@@ -5,6 +5,7 @@ gem 'rails', '3.2.3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'haml-rails'
 gem 'pg'
 gem 'jquery-rails'
 
@@ -23,6 +24,11 @@ end
 
 group :test, :development do
   gem "rspec-rails"
+end
+
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'database_cleaner' # not required, but highly recommended
 end
 
 # To use ActiveModel has_secure_password
